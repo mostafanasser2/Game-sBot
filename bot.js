@@ -135,7 +135,8 @@ client.on('message', puz => {
         
         
         ];
-        if (fkk.content == "#سؤال") {
+        client.on('message', puz => {
+         if (fkk.content == "#سؤال") {
         var x3 = Math.floor(Math.random()*x.length)
         puz.channel.send(`السؤال هو:  __**${x[x3]}**__
 لديك 20 ثانية للاجابة`).then(msg1=> {
